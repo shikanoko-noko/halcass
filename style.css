@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "TMON";
+  src: url("./TMONBlack.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NOTOSANSKR";
+  src: url("./NOTOSANSKR-VF.TTF") format("truetype");
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+#wrap {
+  width: 90%;
+  height: 90%;
+  background-color: #00d9ff;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1 {
+  font-family: "TMON", "NOTOSANSKR";
+  color: #fff;
+  font-size: 24px;
+  -webkit-text-stroke: 1px #333;
+}
+
+section {
+  background-color: #fff;
+  width: 80%;
+  height: 84px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section > h2 {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  font-size: 16px;
+}
+
+section > .copyZone {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 10px;
+  position: absolute;
+  bottom: 30%;
+}
+
+section .copyZone > input {
+  width: 80%;
+  background-color: #bbb;
+  display: flex;
+  font-size: 8px;
+  overflow: auto;
+  text-overflow: clip;
+}
+
+section .copyZone > h3 {
+  font-size: 6px;
+}
+
+section > .copyZone .copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  border: none;
+  transition: all 0.3s;
+  opacity: 0.7;
+}
+
+section > .copyZone .copy:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+section > .linkButton {
+  position: absolute;
+  right: 12px;
+  top: 11px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+section > .linkButton > button {
+  width: 50px;
+  height: 20px;
+  font-size: 12px;
+  border: none;
+  transition: all 0.3s;
+  background-color: #999;
+  color: #fff;
+  font-family: "TMON", "NOTOSANSKR";
+}
+
+section > .linkButton > button:hover {
+  background-color: #333;
+}
+
+section > #linkInput {
+  width: 80%;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(70%);
+  border-radius: 9999px;
+}
+
+section#section2 > .copyZone {
+  bottom: 10%;
+}
+section#section2 > .copyZone {
+  bottom: 10%;
+  width: 90%;
+}
+
+section#section3 {
+  height: 40%;
+  display: flex;
+  gap: 10%;
+  align-items: flex-end;
+}
+
+section#section3 > article {
+  width: 40%;
+  height: 60%;
+  position: relative;
+  bottom: 10%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 5%;
+}
+
+section#section3 > article#start {
+  background-color: #636bff;
+}
+
+section#section3 > article#end {
+  background-color: #f99d9d;
+}
+
+section#section3 > article > .minutesSeconds {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section#section3 > article > .minutesSeconds > div {
+  display: flex;
+
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+section#section3 > article > .minutesSeconds > div > p {
+  color: #fff;
+  font-family: "TMON", "NOTOSANSKR";
+}
+
+section#section3 > article > .minutesSeconds > div > input {
+  height: 50%;
+  width: 100%;
+  border-radius: 9999px;
+  text-align: center;
+  display: inline-block;
+}
+section#section3 > article > h3 {
+  font-size: 10px;
+  color: #fff;
+}
+
+/* =============== */
+section#section3 .copyZone {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+
+section#section3 .copyZone > input {
+  width: 50%;
+  background-color: #bbb;
+  display: flex;
+  font-size: 8px;
+  overflow: auto;
+  text-overflow: clip;
+}
+
+section#section3 .copyZone > h3 {
+  font-size: 6px;
+}
+
+section#section3 .copyZone .copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  border: none;
+  transition: all 0.3s;
+  opacity: 0.7;
+}
+
+section#section3 .copyZone .copy:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+#plustext {
+  font-size: 8px;
+}
+.copyZone > input::placeholder {
+  color: #fff;
+}
